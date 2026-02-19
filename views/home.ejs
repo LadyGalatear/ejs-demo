@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Why Hello There</h1>
+    <h2>From <%= user.name %>!</h2>
+    <p>I like the color <%= user.color %>, and I enjoy eating <%= user.food %>.</p>
+    <p>My GPA is <%= user.grade %>!</p>
+
+    <% if (user.grade >= 2.0) { %>
+        <p>I am passing my classes! Yay!</p>
+    <% } else { %>
+        <p>Oh no, I'm not passing. I better find a tutor.</p>
+    <% } %>
+
+    <% if (user.age >= 21) { %>
+        <p>Let's party, batches.</p>
+    <% } else { %>
+        <p>Oh dear, I don't get to party. A sad day for humanity.</p>
+    <% } %>
+</body>
+</html>
