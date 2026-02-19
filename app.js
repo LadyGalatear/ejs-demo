@@ -12,7 +12,10 @@ app.get('/', (req, res) => {
         color: 'mauve',
         food: 'pork fried rice',
         grade: 3.8,
-        age: 44
+        hobbies: ['video games', 'writing', 'tabletop gaming', 'drawing', 'world-building'],
+        favorite_pokemon: ['Hisuian Zoroark', 'Pheromosa', 'Snorlax', 'Rotom', 'Tyranitar', 'Chandelure', 
+            'Galvantula', 'Greninja'
+        ]
     }
 
     res.render('home', { user });

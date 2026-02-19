@@ -17,10 +17,18 @@
         <p>Oh no, I'm not passing. I better find a tutor.</p>
     <% } %>
 
-    <% if (user.age >= 21) { %>
-        <p>Let's party, batches.</p>
-    <% } else { %>
-        <p>Oh dear, I don't get to party. A sad day for humanity.</p>
-    <% } %>
+    <h3>Hobbies</h3>
+    <ul>
+    <% user.hobbies.forEach(hobby => { %>
+        <li><%= hobby %></li>
+    <% }) %>
+    </ul>
+
+    <h3>Favorite Pokémon</h3>
+    <ol>
+    <% user.favorite_pokemon.forEach(pokemon => { %>
+        <li><%= pokemon %></li>
+    <% }) %>
+    </ol>
 </body>
 </html>
